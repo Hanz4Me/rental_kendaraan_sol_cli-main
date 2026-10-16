@@ -1,0 +1,9 @@
+{
+	"java.project.sourcePaths": ["src"],
+	"java.project.outputPath": "bin",
+	"java.project.referencedLibraries": ["lib/**/*.jar"],
+	"editor.fontSize": 16,
+	"java.debug.settings.console": "integratedTerminal",
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"notebook.defaultFormatter": "esbenp.prettier-vscode"
+}
