@@ -1,7 +1,7 @@
 package model;
 
 //[OCP] Ekstensi dari Kendaraan: aturan biaya mobil tinggal di kelasnya sendiri.
-public class Mobil extends Kendaraan {
+public class Mobil extends Kendaraan implements WajibSIM {
         private static final long ASURANSI = 50000;
 
         public Mobil(String platNomor, String merk, long tarifPerHari) {
@@ -16,5 +16,10 @@ public class Mobil extends Kendaraan {
         @Override
         public long hitungBiaya(int hari) {
                 return getTarifPerHari() * hari + ASURANSI;
+        }
+
+        @Override
+        public String getJenisSIMDibutuhkan() {
+        return "A";
         }
 }

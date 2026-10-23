@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 //[SRP] satu-satunya tanggung jawab: menyimpan & mencari data Penyewaan di ArrayList. 
-public class PenyewaanRepository {
+public class PenyewaanRepository implements IPenyewaanRepository {
         private final List<Penyewaan> data = new ArrayList<>();
 
         public String buatIdBaru() {
